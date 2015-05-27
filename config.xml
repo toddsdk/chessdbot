@@ -1,0 +1,23 @@
+<!--
+This is the configuration file for the bots.py program.
+
+The possible attributes for the <bots> tag (the root tag) are:
+	- server: the IP or domain of the Chess/Jabber Server;
+	- port: the port of the Chess/Jabber Server (in fact it's the BOSH's port);
+	- log: here you can define a path (absolute or relative) to a log file.
+
+Inside the <bots> tag, you can define as many <bot> tags as you wish.
+Each <bot> tag represents a different Jabber user/Chess robot that will be
+connected to the Jabber/Chess Server when bots.py starts.
+
+The possible attributes for a <bot> tag are:
+	- username: the first part of a Jabber ID (i.e. 'joao' if the JID is
+	  'joao@xadrezlivre.c3sl.ufpr.br/ChessD');
+	- password: the password of that Jabber user;
+	- enginepath: the path (absolute or relative) to the Chess Engine program
+	   (i.e. gnuchess, chessbot). This may include in-line arguments.
+-->
+<bots server='xadrezlivre.c3sl.ufpr.br' port='80' log='bots.log'>
+	<bot username='robot1' password='example_password' enginepath='chessdbot -l easy'/>
+	<bot username='robot2' password='example_password' enginepath='chessdbot -l medium'/>
+</bots>

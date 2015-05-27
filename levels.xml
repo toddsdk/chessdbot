@@ -1,0 +1,42 @@
+<chessdbot>
+	<level name="base_level">
+		<search
+			max_depth="2"
+			max_seconds="1"/>
+		<heuristic 
+			pawn_val="11"
+			bishop_val="9"
+			knight_val="9"
+			rook_val="8"
+			queen_val="5"
+			king_val="5"
+			factor_material="19"
+			factor_development="1"
+			factor_pawn="11"
+			factor_bishop="9"
+			factor_king="5"
+			factor_knight="9"
+			factor_queen="5"
+			factor_rook="8"
+			bonus_early_queen_move="0"
+			bonus_early_bishop_stuck="5"
+			bonus_early_knight_stuck="5"
+			bonus_has_castled="-5"
+			bonus_hasnt_castled="5"
+			bonus_passed_pawn="-5"
+			bonus_isolated_pawn="5"
+			bonus_backward_pawn="5"
+			bonus_doubled_pawn="5"
+			bonus_tripled_pawn="0"
+			bonus_doubled_bishop="-5"
+			bonus_fianchetto_bishop="-5"
+			bonus_knight_on_edge="5"
+			bonus_knight_on_hole="-5"
+			bonus_rook_open_file="0"
+			bonus_rook_halfopen_file="-5"
+			bonus_queen_open_file="0"
+			bonus_queen_halfopen_file="0"
+			bonus_center_control="-10"
+		/>
+	</level>
+</chessdbot>
